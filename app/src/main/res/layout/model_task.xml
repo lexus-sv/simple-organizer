@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:background="@color/gray_50">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/taskbackgroundcolor">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTaskTitle"
+        android:textSize="16sp"
+        android:textColor="?attr/textcolor"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/task_title"
+         />
+
+        <ImageView
+            android:id="@+id/date_image"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/date_and_time"
+            android:layout_alignStart="@+id/tvTaskTitle"
+            android:layout_below="@+id/tvTaskTitle"
+            android:layout_marginTop="8dp"
+
+            />
+        <ImageView
+            android:id="@+id/time_image"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/time"
+            android:layout_toRightOf="@+id/tvTaskDate"
+            android:layout_below="@+id/tvTaskTitle"
+            android:layout_marginTop="8dp"
+
+            />
+        <ImageView
+            android:id="@+id/alarm_image"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/alarm_on"
+            android:tint="?attr/colorAccent"
+            android:layout_toRightOf="@+id/tvTaskTime"
+            android:layout_below="@+id/tvTaskTitle"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/repeat_image"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/repeat"
+            android:tint="?attr/colorAccent"
+            android:layout_toRightOf="@+id/alarm_image"
+            android:layout_below="@+id/tvTaskTitle"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTaskDate"
+        android:layout_below="@+id/tvTaskTitle"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:text="texttext"
+        android:layout_toRightOf="@+id/date_image"
+        android:layout_marginBottom="5dp"
+        android:textColor="?attr/tasktextcolor"
+        android:layout_marginStart="5dp" />
+        <ImageButton
+            android:layout_alignTop="@+id/tvTaskTitle"
+            android:id="@+id/taskPopup"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp"
+            style="?android:attr/actionOverflowButtonStyle"
+
+            android:tint="?attr/textcolor"/>
+        <ImageButton
+            android:id="@+id/drop_down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/tvTaskTitle"
+            android:layout_toLeftOf="@+id/taskPopup"
+            android:background="@android:color/transparent"
+            android:src="@drawable/drop_down_arrow"
+            android:tint="?attr/textcolor"/>
+        <TextView
+            android:id="@+id/tvTaskTime"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/textcolor"
+            android:layout_marginLeft="5dp"
+            android:text="time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/time_image"
+            android:layout_below="@+id/tvTaskTitle"
+            />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvTaskPriority"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@color/colorPrimary"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imCircle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/home" />
+        <ImageView
+            android:id="@+id/description_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/description"
+            android:layout_alignStart="@+id/cvTaskPriority"
+            android:layout_below="@+id/cvTaskPriority"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:textColor="?attr/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/time_image"
+            android:layout_alignStart="@+id/tvTaskTitle"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

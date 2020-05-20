@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:background="?attr/backgroundcolor">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/civ"
+    android:layout_alignTop="@+id/civ"
+    android:id="@+id/spin_tv"
+    android:text="text"
+    android:textSize="12sp"
+    android:padding="5dp"
+    android:textColor="?attr/textcolor"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+        <!--<TextView-->
+        <!--android:id="@+id/tvDescription"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/tvTaskTitle"-->
+        <!--android:layout_below="@+id/tvTaskTitle"-->
+        <!--android:visibility="invisible"/>-->
+
+
+
+</RelativeLayout>

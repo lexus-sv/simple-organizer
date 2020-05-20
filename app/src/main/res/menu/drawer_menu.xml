@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/tasks"
+            android:title="@string/all_tasks">
+        </item>
+
+        <item android:id="@+id/home_tasks"
+            android:icon="@drawable/home"
+            android:title="@string/home_tasks"/>
+        <item android:id="@+id/work_tasks"
+            android:icon="@drawable/work"
+            android:title="@string/work_tasks"/>
+        <item android:id="@+id/sport_tasks"
+            android:icon="@drawable/sport"
+            android:title="@string/sport_tasks"/>
+        <item android:id="@+id/shopping_tasks"
+            android:title="@string/shopping_tasks"
+            android:icon="@drawable/pokupki" />
+    </group>
+<item android:title="Properties">
+    <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings">
+        </item>
+
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/info"
+            android:title="@string/about">
+        </item>
+
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/guide"
+            android:title="@string/help">
+        </item>
+    </group>
+    </menu>
+</item>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="@string/share">
+            </item>
+        </menu>
+    </item>
+
+</menu>

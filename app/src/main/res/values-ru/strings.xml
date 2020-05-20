@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Alice</string>
+    <string name="action_settings">Настройки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_show_pepe">Скрыть Пепе</string>
+    
+    <string name="current_task">Текущие</string>
+    <string name="done_task">Выполненные</string>
+
+    <string name="dialog_editing_title">Редактирование задачи</string>
+    
+    <string name="dialog_title">Добавление задачи</string>
+    <string name="dialog_cancel">Отмена</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_error_empty_title">Пожалуйста, введите заголовок задачи.</string>
+    <string name="dialog_removing_message">Вы уверены, что хотите удалить эту задачу? Это действие необратимо</string>
+    <string name="dialog_data_in_past">Выбранная дата в прошлом</string>
+    <string name="removed">Удалено</string>
+    
+    <string name="task_title">Название</string>
+    <string name="task_date">Дата</string>
+    <string name="task_time">Время</string>
+    <string name="task_description_hint">Введите описание…</string>
+
+    <string name="separator_overdue">Просроченные</string>
+    <string name="separator_tomorrow">Завтра</string>
+    <string name="separator_today">Сегодня</string>
+    <string name="separator_future">Будущее</string>
+
+    <string name="welcome">Добро пожаловать</string>
+    <string name="choose_marker">Выберите метку</string>
+
+    <string name="toast_no_text">Заголовок пустой</string>
+    <string name="toast_adding_cancel">Добавление задачи было отменено</string>
+    <string name="toast_task_edited">Задача успешно отредактирована</string>
+    <string name="notify_me">Включить уведомление</string>
+
+    <string name="hint">Введите заголовок…</string>
+
+    <string name="settings">Настройки</string>
+
+    <string name="night_mode_pref">Тёмная тема</string>
+    <string name="night_mode_description">Меняет интерфейс приложения на более тёмный</string>
+
+
+    <string name="copy">Копировать</string>
+    <string name="delete">Удалить</string>
+    <string name="done">В выполненные</string>
+    <string name="edit">Редактировать</string>
+    <string name="share">Поделиться</string>
+    <string name="_8942">⋮</string>
+
+    <string name="help">Помощь</string>
+    <string name="enter_description">Введите заголовок…</string>
+    <string name="About">О Приложении</string>
+    <string name="app_description">Приложение было создано с любовью для всех нуждающихся</string>
+    <string name="app_thx">Если приложение пришлось Вам по душе, дайте мне знать:
+        Alakai20136@gmail.com
+        vk.com/id107751539
+    </string>
+    <string name="about">About</string>
+
+    <string name="link1">Alakai20136@gmail.com</string>
+    <string name="link2">vk.com/id107751539</string>
+    <string name="all_tasks">Все задачи</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="every_year">Каждый год</string>
+    <string name="every_month">Каждый месяц</string>
+    <string name="every_week">Каждую неделю</string>
+    <string name="every_day">Каждый день</string>
+    <string name="every_hour">Каждый час</string>
+    <string name="no_repeating">Без повторения</string>
+    <string name="home_tasks">Домашние дела</string>
+    <string name="work_tasks">Работа</string>
+    <string name="sport_tasks">Спорт</string>
+    <string name="dateConfirm">Выбранная Вами дата находится в прошедшем времени, вы действительно хотите продолжить?</string>
+    <string name="custom_repeat_title">Выберите временной промежуток</string>
+    <string name="custom">Пользовательский</string>
+    <string name="choose_category">Выберите категорию</string>
+    <string name="shopping_tasks">Покупки</string>
+    <string name="shopping">Покупки</string>
+    <string name="home">Домашнее</string>
+    <string name="work">Работа</string>
+    <string name="sport">Спорт</string>
+    <string name="search_by_date">Search by date</string>
+
+    <string-array name="units">
+        <item>Минута</item>
+        <item>Час</item>
+        <item>День</item>
+        <item>Неделя</item>
+        <item>Месяц</item>
+        <item>Год</item>
+    </string-array>
+
+
+</resources>

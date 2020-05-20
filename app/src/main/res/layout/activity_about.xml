@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accessory.AboutActivity"
+    android:background="?attr/backgroundcolor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        app:title="@string/About"
+        app:titleTextColor="#ffffff"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:theme="@style/ToolbarTheme">
+    </android.support.v7.widget.Toolbar>
+
+<ImageView
+    android:id="@+id/author"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/author"
+    android:layout_centerInParent="true"/>
+
+    <ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/icon_img"
+        android:layout_below="@+id/tvAuthorTitle"
+        android:layout_centerInParent="true"
+    android:src="@drawable/splash_alarm_on"
+    android:tint="?attr/tintcolor"/>
+    <TextView
+
+        android:id="@+id/tvAuthorTitle"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        android:textColor="?attr/textcolor"
+        android:textSize="20dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tvAuthorThx"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@+id/author"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/app_thx"
+        android:textSize="16dp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/tvAuthorlink1"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@+id/tvAuthorThx"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/link1"
+        android:textSize="16dp"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/tvAuthorlink2"
+        android:textColor="?attr/textcolor"
+        android:layout_below="@+id/tvAuthorlink1"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:autoLink="web"
+        android:text="@string/link2"
+        android:textSize="16dp"
+        android:padding="10dp"/>
+
+
+</RelativeLayout>

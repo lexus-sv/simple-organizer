@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:buttonTint="?attr/colorAccent"
+            android:textColor="?attr/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_repeating"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:buttonTint="?attr/colorAccent"
+            android:textColor="?attr/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_hour"
+            />
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:buttonTint="?attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_day"
+            android:textColor="?attr/textcolor"
+            />
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:buttonTint="?attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_week"
+            android:textColor="?attr/textcolor"
+            />
+        <RadioButton
+            android:id="@+id/radio_5"
+            android:buttonTint="?attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_month"
+            android:textColor="?attr/textcolor"
+            />
+        <RadioButton
+            android:id="@+id/radio_6"
+            android:buttonTint="?attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/every_year"
+            android:textColor="?attr/textcolor"
+            />
+        <RadioButton
+            android:id="@+id/radio_custom"
+            android:buttonTint="?attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom"
+            android:textColor="?attr/textcolor"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

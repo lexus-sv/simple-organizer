@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Alice</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_show_pepe">Don\'t show Pepe</string>
+
+    <string name="current_task">Current</string>
+    <string name="done_task">Done</string>
+
+    <string name="dialog_editing_title">Editing Task</string>
+
+    <string name="dialog_title">Adding Task</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_error_empty_title">Please, enter the title.</string>
+    <string name="dialog_removing_message">Are you sure you want to delete this task?</string>
+    <string name="dialog_data_in_past">Chosen data is in the past</string>
+    <string name="removed">Removed</string>
+
+    <string name="task_title">Title</string>
+    <string name="task_date">Date</string>
+    <string name="task_time">Time</string>
+    <string name="task_description_hint">Enter description...</string>
+
+    <string name="separator_overdue">Overdue</string>
+    <string name="separator_tomorrow">Tomorrow</string>
+    <string name="separator_today">Today</string>
+    <string name="separator_future">Future</string>
+    <string name="settings">Settings</string>
+    <string name="hint">Enter your title…</string>
+
+    <string name="toast_no_text">Title contains no text</string>
+    <string name="toast_adding_cancel">Task adding canceled</string>
+    <string name="toast_task_edited">Task was successfully edited</string>
+
+    <string name="night_mode_pref">Night mode</string>
+    <string name="night_mode_description">Changes style of an app to darker one</string>
+    <string name="notify_me">Notify me</string>
+    <string name="welcome">Welcome</string>
+    <string name="choose_marker">Choose marker</string>
+    <string name="help">Help</string>
+    <string name="_8942">⋮</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="enter_description">Enter description…</string>
+    <string name="about">About</string>
+    <string name="About">About</string>
+    <string name="app_description">App was created with love for everybody who needs</string>
+    <string name="app_thx">If you have enjoyed working with this app, just let me know:
+
+    </string>
+    <string name="link1">Alakai20136@gmail.com</string>
+    <string name="link2">vk.com/id107751539</string>
+    <string name="all_tasks">All tasks</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="every_year">Every year</string>
+    <string name="every_month">Every month</string>
+    <string name="every_week">Every week</string>
+    <string name="every_day">Every day</string>
+    <string name="every_hour">Every hour</string>
+    <string name="no_repeating">No repeating</string>
+    <string name="home_tasks">Home tasks</string>
+    <string name="work_tasks">Work tasks</string>
+    <string name="sport_tasks">Sport tasks</string>
+    <string name="dateConfirm">Chosen date of task is in the past, are you sure, that you want to continue?</string>
+    <string name="custom_repeat_title">Select time period</string>
+    <string name="custom">Custom</string>
+    <string name="choose_category">Choose category</string>
+    <string name="shopping_tasks">Shopping tasks</string>
+    <string name="shopping">Shopping</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="sport">Sport</string>
+    <string name="search_by_date">Search by date</string>
+
+    <string-array name="units">
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+</resources>

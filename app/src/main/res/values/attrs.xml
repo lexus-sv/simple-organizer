@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="backgroundcolor" format="color" />
+        <attr name="taskbackground" format="color" />
+        <attr name="textcolor" format="color" />
+        <attr name="tintcolor" format="color" />
+        <attr name="buttoncolor" format="color" />
+        <attr name="taskbackgroundcolor" format="color"/>
+        <attr name="separatortextcolor" format="color"/>
+        <attr name="separatorbackgroundcolor" format="color"/>
+        <attr name="tasktextcolor" format="color"/>
+        <attr name="white" format="color"/>
+        <attr name="taskoverduebackground" format="color"/>
+        <attr name="headerbackground" format="color"/>
+    </declare-styleable>
+
+
+
+
+</resources>

@@ -1,0 +1,359 @@
+<resources>
+
+    <!-- Light/Day Mode Theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#BB86FC</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#673AB7</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#B173FD</item>
+        <item name="tasktextcolor">#000000</item>
+        <item name="headerbackground">@drawable/orig</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+    <!-- Night/dark Mode Theme. -->
+
+    <style name="darkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FF5722</item>
+        <item name="backgroundcolor">#39363C</item>
+        <item name="taskbackgroundcolor">#1D1A1D</item>
+        <item name="textcolor">#FFFFFF</item>
+        <item name="taskoverduebackground">#726E6E</item>
+        <item name="tintcolor">#FF5722</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#FA3E02</item>
+        <item name="tasktextcolor">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+        <item name="white">#ffffff</item>
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+        <item name="headerbackground">@drawable/orig2</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--<style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">-->
+        <!--<item name="android:windowBackground">@drawable/splash</item>-->
+    <!--</style>-->
+    <style name="WindowTransitionAnimation">
+
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    
+    <style name="DialogTheme" parent="AlertDialog.AppCompat">
+        <item name="android:textColor">?attr/textcolor</item>
+        <item name="android:textColorPrimary">?attr/textcolor</item>
+        <item name="android:background">?attr/backgroundcolor</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="AppTheme_red" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>
+        <item name="colorAccent">@color/red_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#790C0C</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#8F0D0D</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origred</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>
+        <item name="colorAccent">@color/pink_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#AA1244</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#41ABFF</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origpink</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_darpink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkpink_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkpink_colorPrimaryDark</item>
+        <item name="colorAccent">@color/darkpink_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#631A83</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#FF4F43</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origpurple</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_violet" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/violet_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/violet_colorPrimaryDark</item>
+        <item name="colorAccent">@color/violet_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#6D3FBE</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#C90C4D</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origviolet</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#480DA2</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#FD367A</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/orig3</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_skyblue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/skyblue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/skyblue_colorPrimaryDark</item>
+        <item name="colorAccent">@color/skyblue_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#0F87A5</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#F8CE50</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origbluelight</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_green" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/green_colorPrimaryDark</item>
+        <item name="colorAccent">@color/green_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#37813A</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#45D1C2</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origgreen</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_grey" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/grey_colorPrimaryDark</item>
+        <item name="colorAccent">@color/grey_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#666669</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#EC9C23</item>
+        <item name="tasktextcolor">#000000</item>
+        <item name="headerbackground">@drawable/origgray</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme_brown" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/brown_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/brown_colorPrimaryDark</item>
+        <item name="colorAccent">@color/brown_colorAccent</item>
+        <item name="taskoverduebackground">#CCC7C7</item>
+        <item name="backgroundcolor">#ffffff</item>
+        <item name="taskbackgroundcolor">#ffffff</item>
+        <item name="taskbackground">#FFFFFF</item>
+        <item name="textcolor">#000000</item>
+        <item name="tintcolor">#673AB7</item>
+        <item name="separatortextcolor">#ffffff</item>
+        <item name="separatorbackgroundcolor">#B173FD</item>
+        <item name="tasktextcolor">#000000</item>
+
+        <item name="headerbackground">@drawable/origbrown</item>
+
+        <item name="white">#ffffff</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowTransitionAnimation</item>
+        <item name="android:alertDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <color name="red_colorPrimary">#ff0000</color>
+    <color name="red_colorPrimaryDark">#DF0000</color>
+    <color name="red_colorAccent">#680000</color>
+
+    <color name="pink_colorPrimary">#e91e63</color>
+    <color name="pink_colorPrimaryDark">#CB1755</color>
+    <color name="pink_colorAccent">#2095f2</color>
+
+    <color name="darkpink_colorPrimary">#9b26af</color>
+    <color name="darkpink_colorPrimaryDark">#6E1C91</color>
+    <color name="darkpink_colorAccent">#f34235</color>
+
+    <color name="violet_colorPrimary">#6639b6</color>
+    <color name="violet_colorPrimaryDark">#502ca7</color>
+    <color name="violet_colorAccent">#e81d62</color>
+
+    <color name="blue_colorPrimary">#3F51B5</color>
+    <color name="blue_colorPrimaryDark">#3445A2</color>
+    <color name="blue_colorAccent">#e81d62</color>
+
+    <color name="skyblue_colorPrimary">#03A9F4</color>
+    <color name="skyblue_colorPrimaryDark">#0094D7</color>
+    <color name="skyblue_colorAccent">#fec006</color>
+
+    <color name="green_colorPrimary">#4CAF50</color>
+    <color name="green_colorPrimaryDark">#419744</color>
+    <color name="green_colorAccent">#3AB4A7</color>
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#3445A2</color>-->
+
+    <color name="grey_colorPrimary">#9e9e9e</color>
+    <color name="grey_colorPrimaryDark">#606060</color>
+    <color name="grey_colorAccent">#f90</color>
+
+    <color name="brown_colorPrimary">#795548</color>
+    <color name="brown_colorPrimaryDark">#63453B</color>
+    <color name="brown_colorAccent">#e81d62</color>
+
+
+
+
+
+    <style name="YourAlertDialogTheme">
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowTitleStyle">@style/Theme.Design</item>
+        <item name="android:textAppearanceMedium">@style/Theme.Design</item>
+        <item name="android:borderlessButtonStyle">@style/Theme.Design</item>
+        <item name="android:buttonBarStyle">@style/Theme.Design</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textColorPrimary">#FFFF</item>
+    </style>
+</resources>

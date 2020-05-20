@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.AddingTaskDialogFragment"
+    android:orientation="vertical"
+    android:id="@+id/task_container">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linear1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?attr/colorPrimary">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilDialogTaskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/white"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/white"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addButton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right"
+                app:fabCustomSize="36dp"
+                android:tint="?attr/white"
+                android:src="@drawable/sharp_check_24"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tilDialogTaskTitle"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/keyboard"
+                android:src="@drawable/keyboard"
+                android:layout_toRightOf="@+id/voice"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tilDialogTaskTitle"
+                android:background="@android:color/transparent"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/voice"
+                android:src="@drawable/microphone"
+                android:layout_alignStart="@+id/tilDialogTaskTitle"
+                android:layout_below="@+id/tilDialogTaskTitle"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear1"
+            android:background="?attr/backgroundcolor"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilDialogTaskDate"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textcolor"
+                    android:backgroundTint="?attr/tintcolor"
+                    android:textSize="16sp"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:cursorVisible="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilDialogTaskTime"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:focusableInTouchMode="false"
+                    android:backgroundTint="?attr/tintcolor"
+                    android:textColor="?attr/textcolor"
+                    android:inputType="none"
+                    android:textSize="16sp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/tilDialogTaskDate"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alarm_off"
+                    android:layout_marginLeft="16dp"
+                    android:tint="?attr/tintcolor"
+                    android:id="@+id/alarm_off"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/alarm_on"
+                    android:tint="?attr/tintcolor"
+                    android:id="@+id/alarm_on"
+
+                    />
+                <TextView
+                    android:id="@+id/tvNotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/textcolor"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/alarm_off"
+                    android:text="@string/notify_me"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/repeat"
+                    android:src="@drawable/repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNotify"
+                    android:layout_alignStart="@+id/alarm_on"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRepeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNotify"
+                    android:layout_toRightOf="@+id/repeat"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignTop="@+id/repeat"
+                    android:textSize="16sp"
+                    android:text="@string/no_repeating"
+                    android:textColor="?attr/textcolor"
+                    />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:id="@+id/switchNotify"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"/>
+
+                <TextView
+                    android:id="@+id/marker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_category"
+                    android:textColor="?attr/textcolor"
+                    android:layout_below="@+id/tvRepeat"
+                    android:layout_alignStart="@+id/tvNotify"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"/>
+                <Spinner
+                    android:id="@+id/spDialogTaskPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tvRepeat"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="0dp">
+                </Spinner>
+                <ImageView
+                    android:id="@+id/imMarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@+id/alarm_on"
+                    android:layout_alignTop="@+id/marker"
+                    android:src="@drawable/marker"
+                    android:tint="?attr/tintcolor"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spDialogTaskPriority"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tilDialogTaskDescription">
+
+                    <EditText
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:textColor="?attr/textcolor"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:inputType="textMultiLine"
+                        />
+
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

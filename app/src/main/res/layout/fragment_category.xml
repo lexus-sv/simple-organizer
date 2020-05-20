@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryFragment"
+    android:background="?attr/backgroundcolor">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:src="@drawable/outline_done"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_below="@+id/backgroundImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:text="No tasks"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_current_tasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="88dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

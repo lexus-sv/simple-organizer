@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accessory.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splashTV"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+
+            android:text="@string/welcome"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="#ffffff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splashIV"
+            android:src="@drawable/splash_alarm_on"
+            android:tint="@color/white"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
